@@ -1,0 +1,142 @@
+/* #cSpell:disable */
+
+/* Estilos generales */
+
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+.app-container {
+  font-family: "Rancho", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  
+  width: 100%;
+  background: linear-gradient(45deg, #1943ff, #fa5c2b);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.app-title {
+  font-family: "Rancho", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+  margin-bottom: 60px;
+  padding-left: 0px;
+  color: #fff;
+  align-items: center;
+  text-shadow: 0px 0px 9px rgb(0, 0, 0);
+}
+
+
+/* Estilos para la lista de películas */
+.movie-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Contenedor de la tarjeta de película */
+.movie-card {
+  width: 600px; /* Ancho fijo para las tarjetas */
+  height: 500px;
+  border-radius: 44px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Efecto de zoom y sombra al pasar el ratón */
+.movie-card:hover {
+  transform: translateY(-10px); /* Mueve la tarjeta hacia arriba */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Estilo de la imagen de la película */
+.movie-image {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 300px; /* Altura fija */
+  object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+  border-bottom: 3px solid #f1f1f1; /* Línea separadora entre la imagen y el texto */
+  transition: transform 0.3s ease; /* Transición para el efecto hover */
+}
+
+/* Efecto de zoom en la imagen */
+.movie-card:hover .movie-image {
+  transform: scale(1.1); /* Escala la imagen al pasar el ratón */
+}
+
+/* Estilos para el título y género */
+.movie-card h3 {
+  font-size: 3rem;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Estilo para el texto de género */
+.movie-card p {
+  font-size: 2rem;
+  color: #777;
+  text-align: center;
+}
+
+    /* ------------------ */
+   /* Estilos del Footer */
+  /* ------------------ */
+
+.footer{
+  background-color: #ffffff;
+  margin-top: 50px;
+  border-radius: 33px 33px 0px 0px;
+  height: 250px;
+  margin-bottom: 33px;
+}
+
+.footer-contenido{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.footer-seccion{
+  flex: 1;
+  min-width: 250;
+  text-align: center;
+  font-size: 25px;
+}
+
+.footer-seccion p {
+  font-size: 20px;
+}
+
+u{
+  color: #1943ff;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.texto{
+  margin-left: 155px;
+  text-align: justify;
+}
+
+.IconPelipop{
+  position: relative;
+  right: 250px;
+  bottom: 110px;
+  width: 100px;
+  height: 100px;
+}
